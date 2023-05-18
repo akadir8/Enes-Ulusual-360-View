@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
-import logo from "./görüntü.jpg";
 
 Modal.setAppElement("#root");
 
-export const Card1 = () => {
+export const Card = ({ imageUrl, iframeUrl, top, left}) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const handleOpenModal = () => {
@@ -15,13 +14,23 @@ export const Card1 = () => {
     setModalIsOpen(false);
   };
 
+  const cardStyle = {
+    top,
+    left,
+  };
+
   return (
     <>
       <div
-        className="hidden lg:flex flex-col rounded-md shadow-lg shadow-[#8500cc] absolute -top-80 bottom-0 m-auto left-10 bg-white h-fit w-1/6 cursor-pointer overflow-hidden"
+        className="rounded-md shadow-lg shadow-[#8500cc] bg-white h-fit w-1/6 cursor-pointer absolute"
+        style={cardStyle}
         onClick={handleOpenModal}
       >
-        <img src={logo} alt="" className="transform hover:scale-125 transition-transform duration-300" />
+        <img
+          src={imageUrl}
+          alt=""
+          className="w-full h-auto transform hover:scale-125 transition-transform duration-300"
+        />
         <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 hover:opacity-100 bg-white bg-opacity-75">
           <svg
             className="w-16 h-16 text-black opacity-70 hover:opacity-100"
@@ -45,7 +54,7 @@ export const Card1 = () => {
         >
           X
         </button>
-        <iframe src="https://kuula.co/share/collection/7FCcS?logo=1&info=0&logosize=143&fs=1&vr=0&gyro=0&initload=0&autorotate=0.27&autop=250&autopalt=1&thumbs=4&alpha=0.79&inst=0&keys=0" title="Aşiyan Anaokulu" width={1370} height={600}></iframe>
+        <iframe src={iframeUrl} title="Aşiyan Anaokulu" width={1370} height={600}></iframe>
       </Modal>
     </>
   );
