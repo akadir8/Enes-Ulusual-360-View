@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgba(65,143,222,1) 79% );
+}
+
 .btn {
   background: linear-gradient(
     92.23deg,
-    #ff56f6 21.43%,
-    #b936ee 50.63%,
+    #9288F8 21.43%,
+    #3A98B9 50.63%,
     #3bace2 100%,
     #406aff 117.04%
   );
@@ -29,8 +33,8 @@
     92.23deg,
     #406aff 21.43%,
     #3bace2 50.63%,
-    #b936ee 100%,
-    #ff56f6 117.04%
+    #ffff 100%,
+    #3bace2 117.04%
   );
 }
 
