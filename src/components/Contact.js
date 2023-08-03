@@ -1,5 +1,5 @@
 import React from "react";
-import İMG from "../assets/intro.jpg";
+import İMG from "../assets/intro-removebg-preview (2).png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
@@ -22,16 +22,16 @@ function Contact() {
           </div>
           <ul className="social-media-icon">
             <li>
-              <FontAwesomeIcon icon={faTwitter} />
+              <FontAwesomeIcon icon={faTwitter} className="twitter-icon"/>
             </li>
             <li>
-              <FontAwesomeIcon icon={faFacebookF} />
+              <FontAwesomeIcon icon={faFacebookF} className="facebook-icon"/>
             </li>
             <li>
-              <FontAwesomeIcon icon={faInstagram} />
+              <FontAwesomeIcon icon={faInstagram} className="instagram-icon"/>
             </li>
             <li>
-              <FontAwesomeIcon icon={faLinkedinIn} />
+              <FontAwesomeIcon icon={faLinkedinIn} className="linkedln-icon"/>
             </li>
           </ul>
         </div>
