@@ -103,6 +103,31 @@ body {
   margin-top: 80px;
 }
 
+.twitter-icon {
+  background: #08a0e9;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.facebook-icon {
+  background: #3b5998;
+  padding: 5px 9px 5px;
+  border-radius: 50%;
+
+}
+
+.instagram-icon {
+  background: radial-gradient(circle at 33% 100%, #fdf373 1%, #f15245 30%, #d92e7f 62%, #d6249f 60%, #515ecf 100%, #9b36b7 85% );
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.linkedln-icon {
+  background: #0e76a8;
+  padding: 5px;
+  border-radius: 5px;
+}
+
 .social-media ul li{
   margin: 0 20px;
   left: auto;
