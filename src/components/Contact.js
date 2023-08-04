@@ -10,7 +10,7 @@ import {
 
 function Contact() {
   return (
-    <div className="social">
+    <div className="section social">
       <div className="item">
         <div className="contact">
           <div className="first-text">Çekim Yapmaya Başlayalım Mı</div>
