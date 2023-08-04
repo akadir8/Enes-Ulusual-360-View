@@ -3,14 +3,18 @@
 @tailwind utilities;
 
 body {
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(38,51,97,1) 0%, rgba(65,143,222,1) 79% );
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(38, 51, 97, 1) 0%,
+    rgba(65, 143, 222, 1) 79%
+  );
 }
 
 .btn {
   background: linear-gradient(
     92.23deg,
-    #9288F8 21.43%,
-    #3A98B9 50.63%,
+    #9288f8 21.43%,
+    #3a98b9 50.63%,
     #3bace2 100%,
     #406aff 117.04%
   );
@@ -44,7 +48,7 @@ body {
   border-radius: 100%;
 }
 
-.social{
+.social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,11 +67,17 @@ body {
 }
 
 .contact {
-  background: #b936ee;
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
 }
 
-.social-media{
-  background: #E8D5C4
+.social-media {
+  background: #e8d5c4;
+  display: flex;
+  flex-direction: column; /* dikey sıralama */
+  align-items: center; /* içerikleri yatayda ortala */
+  justify-content: center; /* içerikleri dikeyde ortala */
+  height: 100%; 
 }
 
 .first-text{
@@ -87,20 +97,19 @@ body {
   justify-content: center;
   font-size: 35px;
   font-weight: bold;
-  margin-top: auto;
-  margin-left: auto;
-  padding-top: 80px;
   background-image: linear-gradient(to right, #406aff, #b936ee);
   --webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-.social-media-icon{
+.social-media-icon {
   display: flex;
-  justify-content: center;
-  list-style: none;
-  margin-top: 80px;
+  flex-direction: row;   /* Yatay sıralama */
+  justify-content: center; /* İkonları yatayda ortala */
+  align-items: center;     /* İkonları dikeyde ortala */
+  list-style: none;        /* List stilini kaldır */
+  overflow-x: hidden;  
 }
 
 .twitter-icon {
@@ -113,11 +122,18 @@ body {
   background: #3b5998;
   padding: 5px 9px 5px;
   border-radius: 50%;
-
 }
 
 .instagram-icon {
-  background: radial-gradient(circle at 33% 100%, #fdf373 1%, #f15245 30%, #d92e7f 62%, #d6249f 60%, #515ecf 100%, #9b36b7 85% );
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fdf373 1%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #d6249f 60%,
+    #515ecf 100%,
+    #9b36b7 85%
+  );
   padding: 5px;
   border-radius: 8px;
 }
@@ -128,14 +144,13 @@ body {
   border-radius: 5px;
 }
 
-.social-media ul li{
+.social-media ul li {
   margin: 0 20px;
   left: auto;
   right: auto;
   padding-left: 20px;
   font-size: 28px;
 }
-
 
 @layer base {
   body {
