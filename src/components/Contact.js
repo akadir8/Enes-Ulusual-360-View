@@ -13,7 +13,7 @@ function Contact() {
     <div className="section social">
       <div className="item">
         <div className="contact">
-          <div className="first-text">Çekim Yapmaya Başlayalım Mı</div>
+          <div className="first-text">Haydi  Başlayalım</div>
           <img src={İMG} alt="" className="image" />
         </div>
         <div className="social-media">
