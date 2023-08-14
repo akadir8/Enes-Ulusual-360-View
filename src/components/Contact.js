@@ -17,7 +17,7 @@ function Contact() {
           <img src={İMG} alt="" className="image" />
         </div>
         <div className="social-media">
-          <div>
+          <div className="icon-text">
             <h4 className="thrid-text">Sosyal Medya</h4>
           </div>
           <ul className="social-media-icon">
