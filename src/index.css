@@ -86,13 +86,17 @@ body {
   font-size: 35px;
   font-style: italic;
   color: #fff;
-  
+  transform: translate(0, 30%);
 }
 
 .image {
   height: 240px;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translate(0, 35%);
+  
 }
 
 .social-media-icon {
