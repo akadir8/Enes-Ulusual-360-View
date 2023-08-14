@@ -80,15 +80,19 @@ body {
 }
 
 .first-text {
-  padding-left: 20px;
+  text-align: center;
+  padding-left: 0px;
   padding-top: 20px;
   font-size: 35px;
+  font-style: italic;
   color: #fff;
+  
 }
 
 .image {
   height: 240px;
   border-radius: 20px;
+  transform: translate(0, 35%);
 }
 
 .social-media-icon {
@@ -99,6 +103,7 @@ body {
   list-style: none; /* List stilini kaldır */
   overflow-x: hidden;
   height: 100%;
+  position: static;
 }
 
 .twitter-icon {
