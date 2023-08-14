@@ -10,6 +10,10 @@ body {
   );
 }
 
+.section {
+  margin-top: 40px;
+}
+
 .btn {
   background: linear-gradient(
     92.23deg,
@@ -73,43 +77,28 @@ body {
 
 .social-media {
   background: #e8d5c4;
-  display: flex;
-  flex-direction: column; /* dikey sıralama */
-  align-items: center; /* içerikleri yatayda ortala */
-  justify-content: center; /* içerikleri dikeyde ortala */
-  height: 100%; 
 }
 
-.first-text{
+.first-text {
   padding-left: 20px;
   padding-top: 20px;
   font-size: 35px;
   color: #fff;
 }
 
-.image{
+.image {
   height: 240px;
   border-radius: 20px;
 }
 
-.thrid-text{
-  display: flex;
-  justify-content: center;
-  font-size: 35px;
-  font-weight: bold;
-  background-image: linear-gradient(to right, #406aff, #b936ee);
-  --webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
 .social-media-icon {
   display: flex;
-  flex-direction: row;   /* Yatay sıralama */
-  justify-content: center; /* İkonları yatayda ortala */
-  align-items: center;     /* İkonları dikeyde ortala */
-  list-style: none;        /* List stilini kaldır */
-  overflow-x: hidden;  
+  flex-direction: row; /* Yatay sıralama */
+  transform: translate(0, 20%);
+  justify-content: center;
+  list-style: none; /* List stilini kaldır */
+  overflow-x: hidden;
+  height: 100%;
 }
 
 .twitter-icon {
@@ -150,6 +139,17 @@ body {
   right: auto;
   padding-left: 20px;
   font-size: 28px;
+}
+
+.icon-text {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+  font-style: italic;
+  transform: translate(0, 100%);
 }
 
 @layer base {
