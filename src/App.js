@@ -16,7 +16,7 @@ function App() {
       <Nav/>
       <About/>
       <Contact/>
-      <div className="h-[650px]"></div>
+      <div className="h-[20px]"></div>
     </div>
   );
 }
