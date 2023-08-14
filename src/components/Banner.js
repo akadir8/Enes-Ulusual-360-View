@@ -11,7 +11,7 @@ function Banner() {
 
         <div>
           <div>
-            <h1>Enes <span>Ulusal</span></h1>
+            <h1 className='font-secondary text-[36px] uppercase'>Enes <span>Ulusal</span></h1>
             <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
              
              <TypeAnimation sequence={[
