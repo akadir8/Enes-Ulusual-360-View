@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import Contact from "./components/Contact";
 import Nav from "./components/Nav";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
 
 const cardData = [
   {
@@ -30,6 +31,7 @@ function App() {
         />
       ))}
       <Contact />
+      <Footer/>
       <div className="h-[20px]"></div>
     </div>
   );

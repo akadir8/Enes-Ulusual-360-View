@@ -23,7 +23,7 @@ export const Products = ({ imageUrl, iframeUrl, top, left}) => {
   
     <div className='section' id='about'>
       <div
-        className="rounded-md shadow-lg shadow-[#8500cc] bg-white h-fit w-1/6 cursor-pointer absolute"
+        className="rounded-md shadow-lg shadow-[#306978] bg-white h-fit w-1/6 cursor-pointer absolute"
         style={cardStyle}
         onClick={handleOpenModal}
       >
