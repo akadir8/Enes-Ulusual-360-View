@@ -1,4 +1,5 @@
 import React from "react";
+import { Grid } from "@mui/material";
 import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Contact from "./components/Contact";
@@ -21,15 +22,20 @@ function App() {
       <Header />
       <Banner />
       <Nav />
-      {cardData.map((card, index) => (
-        <Products
-          key={index}
-          imageUrl={card.imageUrl}
-          iframeUrl={card.iframeUrl}
-          top={card.top}
-          left={card.left}
-        />
-      ))}
+      <div className="box-content p-20">
+      <Grid container spacing={3}>
+        {cardData.map((card, index) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+            <Products
+              imageUrl={card.imageUrl}
+              iframeUrl={card.iframeUrl}
+              top={card.top}
+              left={card.left}
+            />
+          </Grid>
+        ))}
+      </Grid>
+      </div>
       <Contact />
       <Footer/>
       <div className="h-[20px]"></div>

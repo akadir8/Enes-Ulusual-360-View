@@ -48,33 +48,6 @@ body {
   border-radius: 100%;
 }
 
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.item {
-  width: 100%;
-  height: 550px;
-  max-width: 820px;
-  background: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 20px 10px rgba(43, 88, 111, 0.94);
-  overflow: hidden;
-  grid-template-columns: repeat(2, 1fr);
-  display: grid;
-}
-
-.contact {
-  background: rgb(14, 116, 152);
-  background: linear-gradient(
-    90deg,
-    rgba(14, 116, 152, 1) 0%,
-    rgba(59, 100, 168, 1) 35%,
-    rgba(26, 101, 116, 1) 100%
-  );
-}
 
 .social-media {
   background: rgb(190, 204, 209);
@@ -86,7 +59,7 @@ body {
   );
 }
 
-.first-text {
+/* .first-text {
   text-align: center;
   padding-left: 0px;
   padding-top: 20px;
@@ -94,9 +67,9 @@ body {
   font-style: italic;
   color: #fff;
   transform: translate(0, 30%);
-}
+} */
 
-.image {
+/* .image {
   height: 240px;
   width: 50%;
   border-radius: 20px;
@@ -104,25 +77,24 @@ body {
   margin-left: auto;
   margin-right: auto;
   transform: translate(0, 55%);
-}
+} */
 
-.contact-image {
-  margin-top: -350px;
-  margin-left: 20%;
-}
+ /* .contact-image {
+  padding-top: -350px;
+  padding-left: 20%;
+}  */
 
-.social-media-icon {
+/* .social-media-icon {
   display: flex;
-  flex-direction: row; /* Yatay sıralama */
+  flex-direction: row; 
   transform: translate(0, 20%);
   justify-content: center;
-  list-style: none; /* List stilini kaldır */
-  overflow-x: hidden;
-  height: 100%;
+  list-style: none; 
+  overflow: hidden;
   position: static;
-}
+}   */
 
-.twitter-icon {
+/* .twitter-icon {
   background: #08a0e9;
   padding: 5px;
   border-radius: 6px;
@@ -152,17 +124,17 @@ body {
   background: #0e76a8;
   padding: 5px;
   border-radius: 5px;
-}
+} */
 
-.social-media ul li {
-  margin: 0 20px;
+ /* .social-media ul li {
+  padding: 0 40px;
   left: auto;
   right: auto;
   padding-left: 20px;
   font-size: 28px;
-}
+} */
 
-.icon-text {
+/* .icon-text {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -171,13 +143,12 @@ body {
   color: #19497b;
   font-style: italic;
   transform: translate(0, 100%);
-}
+} */
 
 .float-right {
   float: right;
-  transform: translate(0, 50%);
-  margin-right: -20px;
-  margin-top: -450px;
+  padding-right: 20px;
+  padding-bottom: 300px;
 }
 @layer base {
   body {
