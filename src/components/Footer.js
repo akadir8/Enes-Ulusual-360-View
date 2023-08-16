@@ -1,15 +1,13 @@
 import React from "react";
+import { Grid, Typography } from "@mui/material";
 
 function Footer() {
   return (
-    <div
-      className="font-nunito ms-3 text-white"
-      style={{  width: "100%" }}
-    >
-      <p className="text-sm font-bold text-left">
+    <Grid container className="font-nunito ms-3 text-white" style={{ width: "100%" }}>
+      <Typography variant="body2" fontWeight="bold" align="left">
         Copyright © 2023 Ubn-Jr. All Right Reserved
-      </p>
-    </div>
+      </Typography>
+    </Grid>
   );
 }
 export default Footer;
