@@ -1,14 +1,16 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import { Grid } from "@mui/material";
 import { fadeIn } from "../variant";
 import Image from "../assets/asset2.png";
+
 function Banner() {
   return (
     <section className="section" id="home">
       <div className="container mx-auto">
-        <div>
-          <div>
+        <Grid container spacing={2}>
+          <Grid item xs={12} sm={6}>
             <div>
               <h1 className="font-secondary text-[36px] uppercase">
                 Enes <span>Ulusal</span>
@@ -23,18 +25,22 @@ function Banner() {
                 />
               </div>
             </div>
+          </Grid>
+          <Grid item xs={12} sm={6}>
             <motion.div
-            variants={fadeIn('down', 0.5)}
-            initial={'hidden'}
-            whileInView={'show'}
-            viewport={{once: false, amount:0.7}}
-            className="hidden lg:flex flex-1 max-w-[480px] float-right">
+              variants={fadeIn("down", 0.5)}
+              initial={"hidden"}
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.7 }}
+              className="hidden lg:flex flex-1 max-w-[380px] float-right"
+            >
               <img src={Image} alt="" />
             </motion.div>
-          </div>
-        </div>
+          </Grid>
+        </Grid>
       </div>
     </section>
   );
 }
+
 export default Banner;
